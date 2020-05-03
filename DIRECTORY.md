@@ -15,6 +15,7 @@
   * [All Permutations](https://github.com/TheAlgorithms/Python/blob/master/backtracking/all_permutations.py)
   * [All Subsequences](https://github.com/TheAlgorithms/Python/blob/master/backtracking/all_subsequences.py)
   * [Coloring](https://github.com/TheAlgorithms/Python/blob/master/backtracking/coloring.py)
+  * [Hamiltonian Cycle](https://github.com/TheAlgorithms/Python/blob/master/backtracking/hamiltonian_cycle.py)
   * [Minimax](https://github.com/TheAlgorithms/Python/blob/master/backtracking/minimax.py)
   * [N Queens](https://github.com/TheAlgorithms/Python/blob/master/backtracking/n_queens.py)
   * [Sudoku](https://github.com/TheAlgorithms/Python/blob/master/backtracking/sudoku.py)
@@ -89,6 +90,7 @@
     * [Number Of Possible Binary Trees](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/number_of_possible_binary_trees.py)
     * [Red Black Tree](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/red_black_tree.py)
     * [Segment Tree](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/segment_tree.py)
+    * [Segment Tree Other](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/segment_tree_other.py)
     * [Treap](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/treap.py)
   * Data Structures
     * Heap
@@ -208,6 +210,7 @@
 
 ## Graphics
   * [Bezier Curve](https://github.com/TheAlgorithms/Python/blob/master/graphics/bezier_curve.py)
+  * [Midpoint Circle](https://github.com/TheAlgorithms/Python/blob/master/graphics/midpoint_circle.py)
 
 ## Graphs
   * [A Star](https://github.com/TheAlgorithms/Python/blob/master/graphs/a_star.py)
