@@ -1,5 +1,24 @@
 # https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
 
+"""
+Usage example with pygame:
+
+import pygame
+import pygame.gfxdraw
+import pygame.locals
+
+pygame.init()
+window = pygame.display.set_mode((800, 800))
+circle_vectors = get_circle_vectors((400, 400), 50, True)
+while True:
+    for e in pygame.event.get():
+        if pygame.key.get_pressed()[pygame.locals.K_ESCAPE]:
+            pygame.quit()
+    for vector in circle_vectors:
+        pygame.gfxdraw.pixel(window, vector[0], vector[1], (255, 255, 255, 255))
+    pygame.display.flip()
+"""
+
 from typing import Tuple, List, Optional, Any
 
 #                (x,   y)
@@ -30,6 +49,10 @@ def get_circle_vectors(
 
     >>> get_circle_vectors((42, 42), 0)
     []
+
+    >>> get_circle_vectors(100, 0)
+    Traceback (most recent call last):
+    TypeError: "center" must be an indexable type with two items, not 100
     """
     circle_vectors: Vectors2D = []
     if _validate_input(center) and _is_int(radius):
@@ -61,6 +84,10 @@ def _get_circle_quadrants(center: Vector2D, current_point: Vector2D) -> Vectors2
 
     >>> _get_circle_quadrants((50, 50), (-1, 0))
     [(51, 50), (50, 51), (49, 50), (50, 49)]
+
+    >>> _get_circle_quadrants((50, 50), ("owa", 0))
+    Traceback (most recent call last):
+    ValueError: "center" must contain two integers, not ('owa', 0)
     """
     circle_vectors: Vectors2D = []
     if _validate_input(center) and _validate_input(current_point):
